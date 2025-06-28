@@ -35,7 +35,10 @@ cd post-manager
 ```json-server --watch db.json --port 3000```
 4. Start the frontend by opening ```index.html``` with Live Server in VS Code.
 
+---
+
 ## Project Structure
+```
 post-manager/
 │
 ├── css/
@@ -45,13 +48,18 @@ post-manager/
 ├── db.json
 ├── index.html
 └── README.md
+```
+
+---
 
 ## Future Ideas
 
-Add categories or tags
-Allow uploading images directly
-Add timestamps for posts
-Dark mode toggle
+- Add categories or tags
+- Allow uploading images directly
+- Add timestamps for posts
+- Dark mode toggle
+
+---
 
 ## License
 
