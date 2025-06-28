@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Quicksand:wght@500;700&display=swap" rel="stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Post Manager</title>
+  </head>
+  <body>
+    <div class="txt-heading">
+      <h1 class="heading-h1">Blog section</h1>
+      <p class="heading-p">where all posts are stored</p>
+    </div>
+
+    <div class="post">
+
+      <div class="left-side">
+        <div class="list-post">
+            <h2>Posts</h2>
+            <p>0 posts</p>
+            <div class="blog-list" id="blog-list"></div>
+        </div>
+
+        <div class="add-post">
+            <h2>+ Add New Post</h2>
+        <form class="form-post" id="add-post">
+            <input type="text" id="post-title" class="input" placeholder="Post title...">
+            <input type="text" id="Author" class="input" placeholder="Author Name...">
+            <input type="url" id="image-link" class="input" placeholder="image Url...">
+            <textarea id="" class="input" cols="40" rows="10" placeholder="Post comment..."></textarea>
+            <div class="post-btn">
+                <button class="form-btn btn-1" type="submit">+ New Post</button>
+                <button class="form-btn" type="button" id="cancel-add">Cancel</button>
+            </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="display-post"></div>
+
+    </div>
+
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

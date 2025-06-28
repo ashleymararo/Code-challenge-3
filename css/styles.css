@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #acbda1;
+    font-family: "Lora", serif;
+    color: #384031;
+}
+
+.txt-heading {
+    margin: 20px;
+    text-align: center;
+}
+
+.heading-h1 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.heading-p {
+    font-family: "Quicksand", sans-serif;
+    padding: 5px;
+    color: #b45cb2;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 50px;
+  box-shadow: #333333;
+}
+
+.left-side {
+  width: 35%;
+  background-color: #fffaf0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-post {
+    background-color: #fff0f8;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px #333333
+}
+
+.add-post h2 {
+    padding: 20px;
+}
+
+.form-post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d4a5c2;
+    margin: 0 20px;
+
+}
+
+.post-btn {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.form-btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f7b6d2;
+    color: aliceblue;
+}
+
+.form-btn:hover {
+  background-color: #dd3849;
+  transform: scale(1.05);
+  color: white;
+}
+
+.btn-1 {
+  background-color: #f7b6d2;
+}
+
+.btn-1:hover {
+  background-color: #f492c5;
+}
+
+.display-post {
+  background-color: #fffaf0;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #333333;
+  min-height: 300px;
+  flex: 1;
+}
+
+.post-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-left: 6px solid #b45cb2;
+  background-color: #fff0f8;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 20px #333333;
+}
+
+.post-card h2 {
+  font-size: 1.8rem;
+  color: #384031;
+  margin-bottom: 8px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #384031;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #384031;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #acbda1;
+}
+
+.delete-btn {
+  background-color: #f7b6d2;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #dd3849;
+}
+
+.list-post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff0f8;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #333333;
+}
+
+#blog-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  max-height: 300px;
+}
+
+.post-title {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+}
+
+
+.edit-post-form {
+  background-color: #fff0f8;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #333333;
+  border-left: 6px solid #b45cb2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-post-form h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #384031;
+}
+
+.edit-post-form input,
+.edit-post-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.edit-post-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-post-form .btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-post-form button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+}
+
+.edit-post-form button[type="submit"] {
+  background-color: #f7b6d2;
+  color: white;
+}
+
+.edit-post-form button[type="submit"]:hover {
+  background-color: #f492c5;
+}
+
+.edit-post-form button#cancel-edit {
+  background-color: #acbda1;
+  color: #333;
+}
+
+.edit-post-form button#cancel-edit:hover {
+  background-color: #dd3849;
+}
