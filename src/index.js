@@ -6,7 +6,7 @@ function main() {
 }
 
 function fetchPosts() {
-  fetch("http://localhost:3000/posts")
+  fetch("https://backendapi-cc3.onrender.com/posts")
     .then(res => res.json())
     .then(posts => {
       const blogList = document.getElementById("blog-list");
@@ -55,7 +55,7 @@ function setupAddPostForm() {
       content: form.querySelector("textarea").value
     };
 
-    fetch("http://localhost:3000/posts", {
+    fetch("https://backendapi-cc3.onrender.com/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPost)
@@ -73,7 +73,7 @@ function setupAddPostForm() {
 }
 
 function showEditForm(id) {
-  fetch(`http://localhost:3000/posts/${id}`)
+  fetch(`https://backendapi-cc3.onrender.com/posts/${id}`)
     .then(res => res.json())
     .then(post => {
       const display = document.querySelector(".display-post");
@@ -96,7 +96,7 @@ function showEditForm(id) {
           content: document.getElementById("edit-content").value
         };
 
-        fetch(`http://localhost:3000/posts/${id}`, {
+        fetch(`https://backendapi-cc3.onrender.com/posts/${id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(updatedPost)
@@ -115,7 +115,7 @@ function showEditForm(id) {
 }
 
 function deletePost(id) {
-  fetch(`http://localhost:3000/posts/${id}`, {
+  fetch(`https://backendapi-cc3.onrender.com/posts/${id}`, {
     method: "DELETE"
   })
   .then(() => {
